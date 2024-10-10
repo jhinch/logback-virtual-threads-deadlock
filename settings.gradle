@@ -1,0 +1,2 @@
+rootProject.name = 'logback-virtual-threads-deadlock'
+include('app')

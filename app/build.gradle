@@ -1,0 +1,22 @@
+plugins {
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation libs.slf4j.api
+    implementation libs.logback.classic
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'VirtualThreadLogbackDeadlock'
+}
